@@ -13,16 +13,20 @@ public class TaskDAO {
     }
 
     /**
-     * Uses the delete() method to remove a given item from the TaskTracker table based on the item's partition key.
-     * @param task given Task instance that's removed from the table based on the partition key
+     * Uses the <delete()> method to remove a given item from the TaskTracker table based on
+     * the item's partition key.
+     * @param task given Task instance that's removed from the table based on the partition
+     *             key
      */
     public void deleteTask(Task task) {
-        //TODO: Implement functionality to delete the task that's passed in
+        mapper.delete(task);
     }
 
     /**
-     * Uses the load() method to get an item from the TaskTracker table given a partition key value.
-     * @param partitionKey the given partition key value used to find the correct item to load.
+     * Uses the load() method to get an item from the TaskTracker table given a partition key
+     * value.
+     * @param partitionKey the given partition key value used to find the correct item to
+     *                     load.
      * @return the Task instance that's been loaded from the table
      */
     public Task getTask(String partitionKey) {

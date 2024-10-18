@@ -1,7 +1,6 @@
 import com.amazon.ata.aws.dynamodb.DynamoDbClientProvider;
 
 import com.amazonaws.services.dynamodbv2.datamodeling.DynamoDBMapper;
-
 public class TaskApp {
 
     /**
